@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Poppins:wght@500&family=Rubik+Beastly&display=swap');
+
+/*common style*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1300px;
+    background-color: white
+}
+
+
+/*---------
+      nav bar
+      ----------*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+}
+
+.name-bar {
+    margin-left: 10%;
+}
+
+.menu-bar {
+    margin-right: 20px;
+}
+
+.name-bar h3 {
+    color: black;
+    font-weight: 700px;
+}
+
+.search-icon {
+    margin-right: 20px;
+}
+
+.cart-icon {
+    margin-right: 30px;
+}
+
+.icon {
+    color: black;
+}
+
+
+/*-------------
+       influencer bar
+       -------------*/
+
+.influencer-home {
+    display: flex;
+}
+
+.influencer-details h1 {
+    font-weight: 800px;
+    font-size: 40px;
+}
+
+.influencer-details {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.influencer-details button {
+    border-radius: 20px;
+    padding: 7px 30px;
+    background-color: #E02C6D;
+    color: whitesmoke;
+}
+
+.influencer-image {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.influencer-image img {
+    height: 400px;
+}
+
+.influencer-home:hover img {
+    transform: scale(1.2) rotate(15deg);
+    transition: transform 2s ease-in;
+}
+
+
+/*logos---------------
+*/
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logos img {
+    margin-left: 3%;
+}
+
+
+/*--------------
+popular collection-------------------
+-------------
+*/
+
+.popular-collection-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.collections {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.collection {
+    background-color: whitesmoke;
+    padding-left: 20px;
+    align-items: center;
+    padding-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgb(165, 163, 163);
+}
+
+.collection:hover {
+    box-shadow: 1px 1px 1px #E02C6D;
+}
+
+.collection img {
+    width: 90%;
+}
+
+.collection h2 {
+    margin-bottom: 0px;
+}
+
+.collection h4 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.collection p {
+    font-size: 12px;
+}
+
+.star {
+    color: orange;
+    font-size: 10px;
+}
+
+.half-star {
+    font-size: 10px;
+    color: orange;
+    margin-right: 10px;
+}
+
+.collection-see-more {
+    text-align: right;
+    margin-right: 15%;
+    color: #E02C6D;
+}
+
+
+/*------------------
+collection part end
+-------------------*/
+
+
+/*-------------------
+extra part--------------*/
+
+.email {
+    margin-top: 10%;
+    display: flex;
+    border: 10px solid #dd7fa1;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px gray;
+}
+
+.massage-area {
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    padding-top: 2%;
+}
+
+.massage-icon {
+    font-size: 200px;
+    width: 50%;
+    padding-left: 6%;
+    color: #d489a5;
+}
+
+textarea {
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 3px 30px;
+    background-color: #e46191;
+    color: whitesmoke;
+}
+
+
+/*-------------------------
+               footer
+               --------------------*/
+
+footer {
+    padding-top: 30px;
+    color: whitesmoke;
+    text-align: center;
+    height: 200px;
+    background-color: black;
+    width: 1300px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer i {
+    padding-right: 24px;
+    font-size: 24px;
+}
+
+
+/* --------------------
+               media   query
+               ------------*/
+
+
+/*Mobile device*/
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .name-bar {
+        width: 100%;
+        justify-content: center;
+    }
+    .influencer-home {
+        margin: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer-details {
+        width: 100%;
+        display: block;
+    }
+    .influencer-image img {
+        align-items: center;
+        margin-right: 20%;
+        margin-left: 0px;
+    }
+    .logos {
+        display: none;
+    }
+    .collections {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .massage-area {
+        margin-top: 0px;
+        padding-bottom: 40px;
+    }
+    .massage-icon {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+
+/* for tablet device */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .menu-bar {
+        display: none;
+    }
+    .name-bar {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .influencer-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 10%;
+    }
+    .collections {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .logos {
+        display: none;
+    }
+}
